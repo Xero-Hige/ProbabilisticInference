@@ -1,6 +1,6 @@
 # Sistema de inferencia probabilistica
 
-### Uso
+## Uso
 Para poder correr el modelo es necesario tener instalado `ProbLog`:
 
 * Python 2: 
@@ -12,9 +12,9 @@ El modelo se puede ejecutar con el comando
 
 ```problog model.pl```
 
-### Modelo
+## Modelo
 
-El modelo esta basado en un ejemplo del curso de la *UBC (University of British Columbia)*. El caso de estudio busca analizar las posibles causas de muerte de una determinada persona. La misma se determina en base a las siguientes variables:
+El modelo esta basado en un ejemplo del curso de la *UBC (University of British Columbia)*[1]. El caso de estudio busca analizar las posibles causas de muerte de una determinada persona. La misma se determina en base a las siguientes variables:
 
 * Break Up (breakUp): Termino recientemente una relacion con su pareja
 * Relative Lost (relativeLost): Perdida reciente de un familiar o allegado
@@ -31,9 +31,11 @@ El modelo esta basado en un ejemplo del curso de la *UBC (University of British 
 
 Este modelo se traduce en la siguiente red bayesiana:
 
-### Codigo del modelo
+[<img src="http://wiki.ubc.ca/images/f/f4/Example_BN.png">]()
 
-``` C++
+## Codigo del modelo
+
+``` Prolog
 %Break Up
 0.2::breakUp.
 
@@ -127,3 +129,6 @@ query(depression).
 query(insomnia).
 query(suicide).
 ```
+
+## Referencias
+[1] - http://wiki.ubc.ca/Course:CPSC522/Bayesian_Networks
